@@ -1,8 +1,4 @@
-val=input()
-a,b,c = val.split()
-a = int(a)
-b = int(b)
-c = int(c)
+a,b,c = map(int, input().split())
 if (c-b)<=0:
     print(-1)
 else:
