@@ -12,6 +12,7 @@ for i in range(num_M, (num_N+1)):
         sum+=i
         if minimum ==0:
             minimum = i
+            
 if sum==0 and minimum ==0:
     print(-1)
 else:
