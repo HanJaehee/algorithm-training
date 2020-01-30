@@ -15,3 +15,4 @@ def is_prime(num):
 for i in range(num_M, num_N+1):
     if(is_prime(i)):
         print(i)
+
