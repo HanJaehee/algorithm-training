@@ -8,6 +8,14 @@ def is_prime(num):
             return False
     return True
 
+def func(even):
+    tmpList = list(x for x in primeList if even>=x)
+    result = []
+    for x in range(int(len(tmpList)/2),-1,-1):
+        tmp = even - tmpList[x]
+        if tmp in tmpList:
+            return [tmp,tmpList[x]] if tmp<tmpList[x] else [tmpList[x],tmp] 
+
 numList = list(range(2,10000))
 primeList = []
 
@@ -15,11 +23,6 @@ for i in numList:
     if is_prime(i):
         primeList.append(i)
 
-print(primeList)
-
-num = int(input())
-for i in range(num):
-    even = int(input())
-    tmpList = list(
-    https://stackoverflow.com/questions/9138112/looping-over-a-list-in-python
-   
+for _ in range(int(input())):
+    val = func(int(input()))
+    print("%d %d" %(val[0], val[1]))
