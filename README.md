@@ -9,4 +9,4 @@ https://www.acmicpc.net/
 그리디 알고리즘
 재귀
 
-현재 삼성SW 진행중
+현재 백트래킹 진행중
