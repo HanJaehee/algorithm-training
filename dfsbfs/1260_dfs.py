@@ -1,5 +1,4 @@
 def dfs(V):
-    visit = [0] * (N + 1)
     visit[V] = 1
     result1.append(V)
     for i in board[V]:
@@ -8,7 +7,6 @@ def dfs(V):
             dfs(i)
 
 def bfs(V):
-    visit = [0] * (N + 1)
     visit[V] = 1
     result2.append(V)
     tmp = [V]
@@ -31,7 +29,9 @@ for i in range(len(board)):
     board[i].sort()
 result1 = []
 result2 = []
+visit = [0] * (N + 1)
 dfs(V)
+visit = [0] * (N + 1)
 bfs(V)
 print(*result1)
 print(*result2)
